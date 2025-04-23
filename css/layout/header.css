@@ -34,3 +34,27 @@
 .header__nav-link:hover {
     color: #8b8b8b;
 }
+
+@media screen and (max-width: 768px) {
+    .header__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        gap: 1em;
+    }
+
+    .header__logo {
+        width: 4em;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header__nav-link {
+        font-size: 18px;
+    }
+}
