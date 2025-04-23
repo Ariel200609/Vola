@@ -1,0 +1,43 @@
+/* Fuentes, tamaños, pesos, estilos de texto */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.6;
+    background-color: #fefefe;
+}
+
+h2 {
+    font-family: 'Pacifico', "Dancing Script", cursive;
+    color: #00aeef;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+h1,
+/* h2, */
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+small {
+    font-size: 0.875em;
+}

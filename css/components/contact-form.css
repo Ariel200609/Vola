@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-section {
+    flex: 1;
+    padding: 50px;
+    background-color: #f4fcff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.info-section {
+    flex: 1;
+    background-color: #00aeef;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand {
+    font-weight: 800;
+}
+
+.contact-info h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: underline;
+}

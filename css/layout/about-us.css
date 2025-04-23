@@ -1,0 +1,87 @@
+/* Estilos generales para la sección "Sobre Nosotros" */
+#about-us {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+#about-us .container {
+    width: 80vw;
+    display: block;
+
+}
+
+/* Título principal */
+#about-us h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Párrafos */
+#about-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Subtítulos */
+#about-us h3 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Listas */
+#about-us ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#about-us ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+#about-us ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    /* Color verde para los íconos */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #about-us .container {
+        width: 90%;
+    }
+
+    #about-us h2 {
+        font-size: 30px;
+    }
+
+    #about-us h3 {
+        font-size: 24px;
+    }
+
+    #about-us p {
+        font-size: 14px;
+    }
+
+    #about-us ul li {
+        font-size: 14px;
+    }
+}

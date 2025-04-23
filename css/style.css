@@ -1,0 +1,23 @@
+/* ============================= */
+/* Base styles */
+@import url('./base/reset.css');
+@import url('./base/typography.css');
+@import url('./base/elements.css');
+
+/* Layout */
+@import url('./layout/header.css');
+@import url('./layout/main.css');
+@import url('./layout/sections.css');
+@import url('./layout/footer.css');
+@import url('./layout/about-us.css');
+
+/* Components */
+@import url('./components/card.css');
+@import url('./components/contact-form.css');
+@import url('./components/gallery.css');
+@import url('./components/hero-carousel.css');
+
+/* Utilities */
+@import url('./utils/helpers.css');
+@import url('./utils/media-queries.css');
+@import url('./utils/responsive.css');

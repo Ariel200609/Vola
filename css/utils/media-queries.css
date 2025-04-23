@@ -1,0 +1,59 @@
+/* ============================= */
+/* Utility Media Queries - Volá */
+/* ============================= */
+
+/* 🌐 Breakpoints Variables */
+:root {
+    --bp-mobile: 360px;
+    --bp-tablet: 768px;
+    --bp-desktop: 1024px;
+    --bp-large: 1366px;
+    --bp-4k: 1920px;
+  }
+  
+  /* 🔒 Ocultar elementos en mobile */
+  .hide-on-mobile {
+    display: none;
+  }
+  
+  @media (min-width: var(--bp-tablet)) {
+    .hide-on-mobile {
+      display: initial;
+    }
+  }
+  
+  /* 🔒 Ocultar en desktop */
+  .hide-on-desktop {
+    display: initial;
+  }
+  
+  @media (min-width: var(--bp-desktop)) {
+    .hide-on-desktop {
+      display: none;
+    }
+  }
+
+  
+  /* 🧪 Breakpoints de prueba rápida */
+  @media (max-width: var(--bp-mobile)) {
+    body {
+      outline: 3px solid red; /* DEBUG: para ver si estás en mobile puro */
+    }
+  }
+  
+  @media (min-width: var(--bp-4k)) {
+    body {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-section,
+    .info-section {
+        padding: 30px;
+    }
+}

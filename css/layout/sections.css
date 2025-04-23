@@ -1,0 +1,8 @@
+/* Organización de las secciones de contenido */
+.fullscreen-section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
