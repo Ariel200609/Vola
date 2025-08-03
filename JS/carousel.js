@@ -1,10 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
+// Función para inicializar el carousel
+const initCarousel = () => {
   let slideIndex = 0;
   let isTransitioning = false;
   let autoSlideInterval; // Variable para guardar el intervalo
 
   const slides = document.querySelectorAll('.carousel-slide');
   const container = document.querySelector('.carousel-container');
+
+  if (!slides.length || !container) {
+    console.error("No se encontraron elementos del carousel");
+    return;
+  }
 
 
   // Función para mover la diapositiva
@@ -42,4 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Iniciar el auto-desplazamiento al cargar la página
   restartAutoSlide();
+};
+
+// Escuchar cuando los componentes estén cargados
+document.addEventListener('componentsLoaded', initCarousel);
+
+// También escuchar DOMContentLoaded como fallback
+document.addEventListener('DOMContentLoaded', () => {
+  // Esperar un poco más para asegurar que los componentes se carguen
+  setTimeout(initCarousel, 100);
 });

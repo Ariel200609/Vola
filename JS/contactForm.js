@@ -1,14 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
+// Función para inicializar el formulario de contacto
+const initContactForm = () => {
   const formulario = document.getElementById("contact-form");
   const personasInput = document.getElementById("personas");
+  
+  if (!formulario || !personasInput) {
+    console.error("Faltan elementos necesarios en el DOM para el formulario de contacto");
+    return;
+  }
+
   const edadesContainer = document.createElement("div");
   edadesContainer.id = "edades-container";
   personasInput.insertAdjacentElement("afterend", edadesContainer);
-
-  if (!formulario || !personasInput || !edadesContainer) {
-    console.error("Faltan elementos necesarios en el DOM");
-    return;
-  }
 
   // Crear los inputs de edad cuando cambie el número de personas
   personasInput.addEventListener("input", () => {
@@ -52,5 +54,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // Mostrar un mensaje de éxito
     alert("Datos enviados exitosamente.");
   });
+};
+
+// Escuchar cuando los componentes estén cargados
+document.addEventListener('componentsLoaded', initContactForm);
+
+// También escuchar DOMContentLoaded como fallback
+document.addEventListener('DOMContentLoaded', () => {
+  // Esperar un poco más para asegurar que los componentes se carguen
+  setTimeout(initContactForm, 100);
 });
 
